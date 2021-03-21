@@ -19,6 +19,14 @@ public class MenuController : MonoBehaviour
         UpdateSoundButtonImage();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) == true)
+        {
+            Application.Quit();
+        }
+    }
+
     private void UpdateSoundButtonImage()
     {
         if (trigger_sound == 1)
@@ -35,10 +43,12 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+
     public void onExitButton()
     {
         Application.Quit();
     }
+
     public void onSoundButton()
     {
         if(trigger_sound == 1)
