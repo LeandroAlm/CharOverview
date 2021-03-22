@@ -12,10 +12,10 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         trigger_sound = 1;
-        if(PlayerPrefs.HasKey("t_sound"))
+        /*if(PlayerPrefs.HasKey("t_sound"))
         {
             trigger_sound = PlayerPrefs.GetInt("t_sound");
-        }
+        }*/
         UpdateSoundButtonImage();
     }
 
@@ -61,7 +61,7 @@ public class MenuController : MonoBehaviour
         }
 
         UpdateSoundButtonImage();
-        PlayerPrefs.SetInt("t_sound", trigger_sound);
+        //PlayerPrefs.SetInt("t_sound", trigger_sound);
     }
 
 }
