@@ -6,16 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    // Menu interection, controls clicks interections
+
     [SerializeField] GameObject SoundBtt;
     private int trigger_sound;
 
     void Start()
     {
         trigger_sound = 1;
-        /*if(PlayerPrefs.HasKey("t_sound"))
+        if(PlayerPrefs.HasKey("t_sound"))
         {
             trigger_sound = PlayerPrefs.GetInt("t_sound");
-        }*/
+        }
+        else
+        {
+            PlayerPrefs.SetInt("t_sound", trigger_sound);
+        }
         UpdateSoundButtonImage();
     }
 
@@ -61,7 +67,7 @@ public class MenuController : MonoBehaviour
         }
 
         UpdateSoundButtonImage();
-        //PlayerPrefs.SetInt("t_sound", trigger_sound);
+        PlayerPrefs.SetInt("t_sound", trigger_sound);
     }
 
 }

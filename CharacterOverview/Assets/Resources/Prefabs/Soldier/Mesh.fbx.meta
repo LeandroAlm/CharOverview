@@ -495,7 +495,17 @@ ModelImporter:
   - first:
       137: 13700012
     second: Robot_Soldier_Rifle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rifle
+    second: {fileID: 2100000, guid: 58c2cf994000c2e459d502d5b1700f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Robot_Soldier
+    second: {fileID: 2100000, guid: 1654ec2413acdbd4481c58b3371dbec3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

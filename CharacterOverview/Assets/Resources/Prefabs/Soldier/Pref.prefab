@@ -73,7 +73,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50da966e76e1c204395d270cf65beeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MagPosition: {fileID: 0}
+  PossibleMaterials:
+  - {fileID: 2100000, guid: d5aafb5ec9da01242b0ee1cf8e1b5945, type: 2}
+  - {fileID: 2100000, guid: 1654ec2413acdbd4481c58b3371dbec3, type: 2}
+  - {fileID: 2100000, guid: edc28d4cd35704248a4d6909e8092b34, type: 2}
+  - {fileID: 2100000, guid: 5bfae0fb4183d0946962f5ab68bdcf31, type: 2}
+  - {fileID: 2100000, guid: 664d3304bbcfc90499aae4313f7eb929, type: 2}
 --- !u!1001 &598514773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,6 +86,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4460732245400125863}
     m_Modifications:
+    - target: {fileID: 100004, guid: 535511bb156e7f54f83f305d96a1c4ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100124, guid: 535511bb156e7f54f83f305d96a1c4ce, type: 3}
       propertyPath: m_Name
       value: Soldier_Mesh
