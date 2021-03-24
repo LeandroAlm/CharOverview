@@ -31,13 +31,9 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("p"))
+        if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            Time.timeScale = 0;
-        }
-        if (Input.GetKeyUp("p"))
-        {
-            Time.timeScale = 1.0f;
+            Application.Quit();
         }
     }
 
@@ -53,7 +49,7 @@ public class GameController : MonoBehaviour
         GameObject tempGO = GameObject.Instantiate(Resources.Load(path) as GameObject, new Vector3(0, 0, -9), Quaternion.identity);
         tempGO.transform.name = "CharacterPlayer";
         Character = tempGO;
-        Character.GetComponent<CharacterController>().SetGameController(gameObject);
+        Character.GetComponent<CharacterController>().SetGameController(gameObject, Model);
 
         int i = 0;
         foreach (Transform child in AnimPanel.transform)
